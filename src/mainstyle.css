@@ -271,6 +271,6 @@ font-size: 150%
  font-size: 150%;
 }
 
-#chance {
+#chance, #end {
   display:none;
 }
