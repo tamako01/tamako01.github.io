@@ -28,167 +28,146 @@
             src="https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1-edb203c114.10.2.js"></script>
     <script src="src/script.js"></script>
 </head>
-<body class="h-100">
-<main class="d-flex flex-nowrap">
-    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 200px;">
-        <a href="main.html" style="color:white;">
-            <p style="font-family: DotGothic16; font-size: 140%">霊とか相談所</p>
-        </a>
-        <hr>
-        <ul class="nav nav-pills flex-column mb-auto">
-            <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="task-tab" data-bs-toggle="tab" data-bs-target="#task" type="button"
-                   role="tab" aria-controls="task" aria-selected="true">
-                    業　務
-                </a>
-            </li>
-            <li>
-                <a class="nav-link" id="feedback-tab" data-bs-toggle="tab" data-bs-target="#feedback" type="button"
-                   role="tab" aria-controls="task" aria-selected="false">
-                    意　見
-                </a>
-            </li>
-            <li>
-                <a class="nav-link" id="blog-tab" data-bs-toggle="tab" data-bs-target="#blog" type="button" role="tab"
-                   aria-controls="task" aria-selected="false">
-                    BLOG
-                </a>
-            </li>
-        </ul>
-        <hr>
-        <div class="dropdown">
-            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-               data-bs-toggle="dropdown" aria-expanded="false">
-                <strong>MENU</strong>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                <li><a class="dropdown-item" href="#">New project...</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="tab-content h-100 w-100" id="TabContent" style="background:black;">
-        <div class="tab-pane fade show active" id="task" role="tabpanel" aria-labelledby="task-tab" tabindex="0">
+<body id="topic_page">
+<div class="wrapper">
+    <div id="main">
+        <div class="container-fluid" style="padding-top:50px; overflow-y: scroll;height: 100vh;">
             <img src="src/images/ekubo1.gif" class="image" alt=""
                  style="position:absolute; right: 20px; bottom: 100px;"/>
             <img src="src/images/ekubo1.gif" class="image" alt=""
-                 style="transform: scaleX(-1); position:absolute; left: 210px; top: 250px;"/>
-            <div class="text-center inner-pane">
-                <div class="row justify-content-md-center" style="height: 160px">
-                    <div class="col-4 task_card" style="background: lightblue;">
-                        『霊障』でお悩みの方
+                 style="transform: scaleX(-1); position:absolute; left: 20px; top: 250px;"/>
+            <div class="text-center col">
+                <div class="row justify-content-md-center" style="height:200px">
+                    <svg style="stroke-width: 4px;" viewBox="0 0 370 130">
+                        <defs>
+                            <linearGradient id="rainbow" x1="0" x2="0" y1="15" y2="25" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="blue" offset="0%"/>
+                                <stop stop-color="purple" offset="25%"/>
+                                <stop stop-color="red" offset="50%"/>
+                                <stop stop-color="orange" offset="75%"/>
+                                <stop stop-color="green" offset="100%"/>
+                            </linearGradient>
+                        </defs>
+                        <text style="fill:gold" stroke="url(#rainbow)" class="svgStroke" y="20" x="50%"
+                              text-anchor="middle" dominant-baseline="middle">
+                            霊とか相談所 公式HP
+                        </text>
+                    </svg>
+                </div>
+                <div class="row justify-content-md-center" style="">
+                    <div class="col-5 task_card" style="background-color: #ffe6e6;">
+                        <svg style="stroke-width: 6px;  stroke: white;" viewBox="-20 10 370 160">
+                            <text style="font-size: 150%; " class="svgStroke" y="30" x="20">
+                                <tspan dy="1em" x="0">霊能界の新星、
+                                    <tspan style="fill:green">霊幻</tspan>
+                                    <tspan style="fill:purple">新隆</tspan>
+                                    です！！
+                                </tspan>
+                                <tspan dy="2em" x="0">一人で悩まずご相談ください！！</tspan>
+                                <tspan dy="2em" x="0">明朗会計、各種コースあり！！</tspan>
+                            </text>
+                        </svg>
                     </div>
-                    <div class="col-5 task_card" style="background: blue;">
-                        そのひとの声が聞きたい…
+                    <div class="col-3">
+                        <img src="src/images/portrait.png" class="image" alt=""/>
                     </div>
                 </div>
-                <div class="row justify-content-md-center" style="height: 180px">
-                    <div class="col-5 task_card" style="background: lemonchiffon;">
-                        心霊写真鑑定
+                <div class="row justify-content-md-center">
+                    <div class="col-4">
+                        <img src="src/images/1.png" class="" alt=""/>
                     </div>
-                    <div class="col task_card" style="background: gray;">
-                        事故物件
+                    <div class="col-5 task_card blink_by" style="background: blue;">
+                        <svg style="stroke-width: 1px; stroke: black;" viewBox="-20 10 370 130">
+                            <defs>
+                                <linearGradient id="2color" x1="0" x2="0" y1="0" y2="80"
+                                                gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="red" offset="0%"/>
+                                    <stop stop-color="blue" offset="100%"/>
+                                </linearGradient>
+                            </defs>
+                            <text style="fill: green;" class="svgStroke" y="20" x="50%" text-anchor="middle"
+                                  dominant-baseline="middle">
+                                <tspan dy="1em" x="50%"
+                                       style="font-size: 120%; stroke-width: 1px; stroke: white; text-shadow: 0 0 3px black;"
+                                       fill="url(#2color)">そのひとの声が聞きたい…
+                                </tspan>
+                                <tspan dy="2em" x="50%">
+                                    <tspan style="fill:red">『降霊の儀』</tspan>
+                                    とは
+                                </tspan>
+                                <tspan dy="1em" x="50%">現代のイタコ</tspan>
+                                <tspan dy="1em" x="50%">遺産相続問題に決定打？</tspan>
+                            </text>
+                        </svg>
+
                     </div>
                 </div>
-                <div class="row justify-content-md-center" style="height: 170px">
-                    <div class="col-5 task_card" style="background: peachpuff;">
-                        その肩こり
+                <div class="row justify-content-md-center">
+                    <div class="col-4">
+                        <img src="src/images/2.png" class="" alt=""/>
                     </div>
-                    <div class="col-5 task_card" style="background: brown;">
-                        『都市伝説』
+                    <div class="col-4">
+                        <img src="src/images/3.png" class="" alt=""/>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col-5 task_card blink_rainbow" style="background: peachpuff;">
+                        <svg style="stroke-width: 1px; stroke: black;" viewBox="-20 10 370 130">
+                            <text style="fill: red; font-size: 150%; " class="svgStroke" y="20" x="50%"
+                                  text-anchor="middle" dominant-baseline="middle">
+                                <tspan dy="1em" x="20%"
+                                       style="stroke-width: 1px; stroke: white; text-shadow: 0 0 3px black;"
+                                       fill="lightcoral">その肩こり
+                                </tspan>
+                                <tspan dy="1em" x="50%">
+                                    『背後霊』が原因かも…
+                                </tspan>
+                                <tspan dy="2em" x="50%" style="fill: lightblue; font-size: 70%; ">体調の不調、現代の病
+                                </tspan>
+                            </text>
+                        </svg>
+                    </div>
+                    <div class="col-5 task_card" style="background: darkred;">
+                        <svg style="stroke-width: 1px; stroke: black;" viewBox="-20 10 370 130">
+                            <text style="fill: white;" class="svgStroke" y="20" x="50%" text-anchor="middle"
+                                  dominant-baseline="middle">
+                                <tspan dy="1em" x="50%"
+                                       style="font-size: 150%; stroke-width: 1px; stroke: white; text-shadow: 0 0 3px black;"
+                                       fill="orange"> 『都市伝説』の今
+                                </tspan>
+                                <tspan dy="2em" x="50%"></tspan>
+                                <tspan dy="2em" x="50%">
+                                    <tspan style="fill:lightgreen" class="blink_text_green">おひきさん、</tspan>
+                                    花子さん
+                                </tspan>
+                                <tspan dy="1em" x="50%">カシマレイコ、
+                                    <tspan style="fill:lightblue" class="blink_text_blue">赤レイン</tspan>
+                                </tspan>
+                                <tspan dy="1em" x="50%">ネットロア～現代の都市伝説</tspan>
+                            </text>
+                        </svg>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="tab-pane fade" id="feedback" role="tabpanel" aria-labelledby="feedback-tab" tabindex="0">
-            <div class="inner-pane">
-                <form class="row info-form">
-                    <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputPassword4" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4">
-                    </div>
-                    <div class="col-12">
-                        <label for="inputAddress" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                    </div>
-                    <div class="col-12">
-                        <label for="inputAddress2" class="form-label">Address 2</label>
-                        <input type="text" class="form-control" id="inputAddress2"
-                               placeholder="Apartment, studio, or floor">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputCity" class="form-label">City</label>
-                        <input type="text" class="form-control" id="inputCity">
-                    </div>
-                    <div class="col-md-4">
-                        <label for="inputState" class="form-label">State</label>
-                        <select id="inputState" class="form-select">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                        </select>
-                    </div>
-                    <div class="col-md-2">
-                        <label for="inputZip" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
-                    </div>
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                                Check me out
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                    </div>
-                </form>
+
+            <div class="row-1 justify-content-md-center">
+                <img src="src/images/arrow.png" class="" alt=""/>
+
             </div>
-        </div>
-        <div class="tab-pane fade" id="blog" role="tabpanel" aria-labelledby="blog-tab" tabindex="0">
-            <div class="inner-pane">
-                <form class="info-form" id="account">
-                    <div class="mb-3">
-                        <label for="account_name" class="form-label">Account</label>
-                        <input type="email" class="form-control" id="account_name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password">
-                    </div>
-                    <button type="submit" class="btn btn-primary">確認</button>
-                </form>
-                <div class="modal fade" id="false_warning" data-bs-backdrop="static" data-bs-keyboard="false"
-                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="staticBackdropLabel">安全確認</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                IDやパスワードが違います。
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
-                                </button>
-                                <button type="button" class="btn btn-primary">Understood</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="row-7 justify-content-md-center">
+                <img src="src/images/course.png" class="" alt=""/>
+
             </div>
+            <div class="row-7 justify-content-md-center">
+                <img src="src/images/skill.png" class="" alt=""/>
+
+            </div>
+            <a href="contents.html" class="justify-content-md-center">
+                <img src="src/images/enter.png" alt=""/>
+            </a>
         </div>
     </div>
-</main>
+</div>
+
 </body>
 </html>

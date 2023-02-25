@@ -1,11 +1,11 @@
 body {
     min-height: 100vh;
     min-height: -webkit-fill-available;
-  }
+}
   
-  html {
+html {
     height: -webkit-fill-available;
-  }
+}
   
   main {
     height: 100vh;
@@ -62,10 +62,12 @@ body {
     margin: 5px;
   }
   .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    background-color: lightgreen;
+    background-color: cornflowerblue;
+    color:blue
     }
   .nav-link {
-      color: lightcoral;
+      color: lawngreen;
+      color: lawngreen;
   }
 
   .inner-pane {
@@ -78,3 +80,183 @@ body {
   .info-form {
     color: white;
   }
+
+  .svgStroke {
+      fill: brown;
+      stroke-linejoin: round;
+      paint-order: stroke;
+  }
+
+  .image {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+
+body:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    -moz-pointer-events: none;
+    -webkit-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    background-attachment: scroll;
+    background-image: url('images/bg.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    background-color: #FFFFFF;
+}
+#topic_page:before {
+    background-image: url('images/bg.png')
+}
+
+#main {
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    z-index: 1;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -moz-flex-grow: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+    -moz-flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+    text-align: center;
+    -moz-transition: opacity 2s ease 0s,-moz-transform 2s ease 0s;
+    -webkit-transition: opacity 2s ease 0s,-webkit-transform 2s ease 0s;
+    -ms-transition: opacity 2s ease 0s,-ms-transform 2s ease 0s;
+    transition: opacity 2s ease 0s,transform 2s ease 0s;
+    -moz-transform: perspective(1000px) rotateY(0deg);
+    -webkit-transform: perspective(1000px) rotateY(0deg);
+    -ms-transform: perspective(1000px) rotateY(0deg);
+    transform: perspective(1000px) rotateY(0deg);
+    -moz-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+#main > .inner {
+    position: relative;
+    z-index: 1;
+    border-radius: inherit;
+    padding: 3rem 3rem;
+    max-width: 100%;
+    width: 40rem;
+}
+
+.blink_by {
+    animation: blink-by 1s steps(1, start) infinite;
+    -webkit-animation: blink-by 1s steps(1, start) infinite;
+}
+
+@keyframes blink-by {
+    0%		{ background-color: blue;}
+    50%		{ background-color: yellow;}
+    100%		{ background-color: blue;}
+}
+@-webkit-keyframes blink-by {
+    0%		{ background-color: blue;}
+    50%		{ background-color: yellow;}
+    100%		{ background-color: blue;}
+}
+
+.blink_rainbow {
+    animation: blink-rb 2s steps(5, start) infinite;
+    -webkit-animation: blink-rb 2s steps(5, start) infinite;
+}
+
+@keyframes blink-rb {
+    0%		{ background-color: lightblue;}
+    25%		{ background-color: lightyellow;}
+    50%		{ background-color: lightcoral;}
+    75%		{ background-color: lightgreen;}
+    100%		{ background-color: lightpurple;}
+}
+@-webkit-keyframes blink-rb {
+    0%		{ background-color: lightblue;}
+    25%		{ background-color: lightyellow;}
+    50%		{ background-color: lightcoral;}
+    75%		{ background-color: lightgreen;}
+    100%		{ background-color: lightpurple;}
+}
+
+
+.blink_text_green {
+    animation: blink-tg 1s steps(1, start) infinite;
+    -webkit-animation: blink-tg 1s steps(1, start) infinite;
+}
+
+@keyframes blink-tg {
+    0%		{ fill:lightgreen}
+    50%		{ fill:red}
+    100%		{ fill:lightgreen}
+}
+@-webkit-keyframes blink-tg {
+    0%		{fill:lightgreen}
+    50%		{ background-color: red;}
+    100%		{ fill:lightgreen}
+}
+
+
+.blink_text_blue {
+    animation: blink-tb 1s steps(1, start) infinite;
+    -webkit-animation: blink-tb 1s steps(1, start) infinite;
+}
+
+@keyframes blink-tb {
+    0%		{ fill:lightblue}
+    50%		{ fill:orange}
+    100%		{ fill:lightblue}
+}
+@-webkit-keyframes blink-tb {
+    0%		{fill:lightblue}
+    50%		{ background-color: orange;}
+    100%		{ fill:lightblue}
+}
+.blog{
+ background: lavenderblush;
+ margin: 10px;
+}
+.blog_title {
+font-size: 150%
+}
+
+#blogs {
+    display: none;
+}
+
+.stars{
+  position: absolute;
+  top: 0;
+  animation: example 5s infinite;
+}
+
+@keyframes example {
+  0%   {width: 100px;}
+  100% {top: 100vh; width: 100px;  transform: scaleX(-1);}
+}
