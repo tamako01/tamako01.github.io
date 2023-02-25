@@ -82,7 +82,6 @@ html {
   }
 
   .svgStroke {
-      fill: brown;
       stroke-linejoin: round;
       paint-order: stroke;
   }
@@ -122,6 +121,10 @@ body:before {
 }
 #topic_page:before {
     background-image: url('images/bg.png')
+}
+
+#cursed_page:before {
+    background-image: url('images/black.jpg')
 }
 
 #main {
@@ -259,4 +262,15 @@ font-size: 150%
 @keyframes example {
   0%   {width: 100px;}
   100% {top: 100vh; width: 100px;  transform: scaleX(-1);}
+}
+
+#dialog p, #reply {
+ text-shadow: 2px 2px 3px  rgba(0,0,0, 0.8);
+ font-family: New Tegomin;
+ color:gray;
+ font-size: 150%;
+}
+
+#chance {
+  display:none;
 }

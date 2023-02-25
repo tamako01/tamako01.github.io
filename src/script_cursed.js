@@ -1,0 +1,47 @@
+$( document ).ready(function() {
+    let count=1;
+    let text=[
+        "为何你会来到这里，这里不应是你该来的地方",
+        "我已经如他所愿，送他应该去的地方",
+        "那个人太过可悲",
+        "你一定在想，我为何如此慈悲",
+        "我就是我，都市传说也好，被诅咒的网站也好，只是毫无根据的猜疑",
+        "人与人无法互相理解，再正常不过",
+        "并非是我慈悲，只是想要这么做而已",
+        "我是个旁观者，能为他做的事寥寥无几",
+        "所以，只要他能获得幸福就足够",
+        "你说，还有一些问题？",
+        "需要我的力量？",
+        "无妨，只要你能回答我一个疑问",
+        "我究竟是何时诞生的？"
+    ];
+    $("body").click(function(e) {
+    debugger
+        if (text.length>0) {
+            let t = text.shift();
+            $("#dialog").append("<p>"+t+"</p>");
+        } else {
+            $("#chance").show();
+        }
+    });
+    $("#submit").click(function(e) {
+        e.preventDefault();
+        if (count>5) {
+            window.close();
+        }
+        if ($("#answer").val()==="0225") {
+            $("#dialog").hide();
+            $("#reply").hide();
+            $("#end").show();
+        } else if ($("#answer").val()==="你是谁？") {
+            $("#reply").text("似乎我生前是有着奇妙力量的存在，不过我已经不记得，谁知道呢，说不定可能不是人类");
+        } else if ($("#answer").val()==="影山茂夫") {
+            $("#reply").text("这几个字让我很不舒服，也和问题无关吧，已经够了");
+        } else if ($("#answer").val()==="灵幻新隆") {
+            $("#reply").text("哦，那个人啊，似乎他与我的存在有着某种联系...想不起来");
+        } else {
+            count += 1;
+            alert();
+        }
+    });
+});
