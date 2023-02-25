@@ -274,3 +274,20 @@ font-size: 150%
 #chance, #end {
   display:none;
 }
+
+#overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255,0,0,0);
+  z-index: 2;
+}
+
+#chance {
+  position: relative;
+  z-index: 9;
+}
