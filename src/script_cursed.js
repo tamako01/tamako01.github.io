@@ -25,6 +25,7 @@ $( document ).ready(function() {
         }
     });
     $("#submit").click(function(e) {
+        let answer = $("#answer").val();
         e.preventDefault();
         if (count>=5) {
             window.location.href="main.html";
@@ -34,11 +35,11 @@ $( document ).ready(function() {
             $("#reply").hide();
             $("#overlay").css("background-color", "black");
             $("#end").show();
-        } else if ($("#answer").val()==="你是谁？") {
+        } else if (answer.includes("你是谁")) {
             $("#reply").text("似乎我生前是有着奇妙力量的存在，不过我已经不记得，谁知道呢，说不定可能不是人类");
-        } else if ($("#answer").val()==="影山茂夫") {
+        } else if (answer.includes("影山") || answer.includes("茂夫") || answer.includes("mob") || answer.includes("龙套")) {
             $("#reply").text("这几个字让我很不舒服，也和问题无关吧，已经够了");
-        } else if ($("#answer").val()==="灵幻新隆") {
+        } else if (answer.includes("新隆") ||answer.includes("灵幻") ||answer.includes("师父") ||answer.includes("师匠")) {
             $("#reply").text("哦，那个人啊，似乎他与我的存在有着某种联系...想不起来");
         } else {
             let op = 0.2*count;
