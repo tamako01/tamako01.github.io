@@ -20,12 +20,12 @@
     <link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=DotGothic16' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="src/mainstyle.css">
+    <script type="text/javascript"
+            src="https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1-edb203c114.10.2.js"></script>
+<!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
             crossorigin="anonymous"></script>
-    <!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>-->
-    <script type="text/javascript"
-            src="https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1-edb203c114.10.2.js"></script>
     <script src="src/script.js"></script>
 </head>
 <body>
@@ -42,7 +42,7 @@
                 </svg>
             </div>
             <nav class="navbar" style="background-color: cornflowerblue;">
-                <div class="container-fluid" style="    justify-content: center;">
+                <div class="container-fluid" style="justify-content: center;">
                     <hr>
                     <ul class="nav nav-pills mb-auto">
                         <li class="nav-item" role="presentation">
@@ -53,7 +53,7 @@
                         |
                         <li class="nav-item" role="presentation">
                             <a href="topics.html" class="nav-link">
-                                業　務
+                                业 务
                             </a>
                         </li>
                         |
@@ -61,7 +61,7 @@
                             <a class="nav-link active" id="feedback-tab" data-bs-toggle="tab" data-bs-target="#feedback"
                                type="button"
                                role="tab" aria-controls="task" aria-selected="false">
-                                意　見
+                                意 见
                             </a>
                         </li>
                         |
@@ -79,71 +79,219 @@
             <div class="tab-content w-100" id="TabContent" style="background:thistle;">
                 <div class="tab-pane fade show active" id="feedback" role="tabpanel" aria-labelledby="feedback-tab"
                      tabindex="0">
-                    <div class="inner-pane">
-                        <form class="row info-form">
-                            <div class="col-md-6">
-                                <label for="inputEmail4" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="inputEmail4">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="inputPassword4" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="inputPassword4">
-                            </div>
-                            <div class="col-12">
-                                <label for="inputAddress" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                            </div>
-                            <div class="col-12">
-                                <label for="inputAddress2" class="form-label">Address 2</label>
-                                <input type="text" class="form-control" id="inputAddress2"
-                                       placeholder="Apartment, studio, or floor">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="inputCity" class="form-label">City</label>
-                                <input type="text" class="form-control" id="inputCity">
-                            </div>
-                            <div class="col-md-4">
-                                <label for="inputState" class="form-label">State</label>
-                                <select id="inputState" class="form-select">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
-                                </select>
-                            </div>
-                            <div class="col-md-2">
-                                <label for="inputZip" class="form-label">Zip</label>
-                                <input type="text" class="form-control" id="inputZip">
-                            </div>
-                            <div class="col-12">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                    <label class="form-check-label" for="gridCheck">
-                                        Check me out
-                                    </label>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col" style="display: grid; text-align: left">
+                                <div id="comments" class="col">
+                                    <div class="text-center font-weight-bold" style="font-size:150%">意见板</div>
+                                    <div class="row blog">
+                                        <div class="row">
+                                            <p class="comment_name">Heavensay0nara-ME</p>
+                                        </div>
+                                        <div class="col-1">
+                                            <img src="src/images/icon.jpg" class="image" alt=""/>
+                                        </div>
+                                        <div class="col">
+                                            <p>
+                                                我也算是这里的老顾客了，灵幻大师除灵手法一直很老练，每次肩膀很重的症状都有所缓解，大概这里就是属于我的能量场所吧～
+                                                <br>
+                                                不过网站的首页好像有点问题，经常无法访问这点有点困扰啊，希望你们尽快修复哟
+                                                <br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row blog">
+                                        <div class="row">
+                                            <p class="comment_name">DEATH777</p>
+                                        </div>
+                                        <div class="col-1">
+                                            <img src="src/images/icon.jpg" class="image" alt=""/>
+                                        </div>
+                                        <div class="col">
+                                            <p>
+                                                尽是些抱怨的话真是给大师添麻烦了。<br>
+                                                头上一直有灵的感觉已经消失了。<br>
+                                                是大师灵力高强的功劳啊！不可思议！<br>
+                                                冥冥之中或许是命运在指引我吧。<br>
+                                                “界限之前请务必告诉我，不要硬抗。”<br>
+                                                ——非常感谢大师，非常感谢。<br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row blog">
+                                        <div class="row">
+                                            <p class="comment_name">8972faKer</p>
+                                        </div>
+                                        <div class="col-1">
+                                            <img src="src/images/icon.jpg" class="image" alt=""/>
+                                        </div>
+                                        <div class="col">
+                                            <p>
+                                                这就是个骗子开的专门骗白痴上钩的钓鱼网站<br>
+                                                该不会真的有人相信吧？笑死了wwwwww<br>
+                                                这人可是曾经被媒体扒过皮的啊，就是个 【死 骗 子】 wwwwwww<br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row blog">
+                                        <div class="row">
+                                            <p class="comment_name">SeriSEzawa</p>
+                                        </div>
+                                        <div class="col-1">
+                                            <img src="src/images/icon.jpg" class="image" alt=""/>
+                                        </div>
+                                        <div class="col">
+                                            <p>
+                                                请问您去哪里了？如果您看得到这条消息请务必联系我，否则我就要报警了！<br>
+                                                已经整整八天没有您的消息了<br>
+                                                我明白您的心情，但是<br>
+                                                还是请您:<br>
+                                                【节哀顺变】<br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="accordion">
+                                    <div class="card">
+                                        <div class="card-header d-flex justify-content-md-center" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwo" aria-expanded="true"
+                                                        aria-controls="collapseTwo">
+                                                    发表意见
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                                             data-bs-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-7">
+                                                        <div class="row">
+                                                            <label for="comment_box" class="form-label">请留下您的宝贵意见</label>
+                                                            <textarea id="comment_box" class="form-control" style="height: 200px;"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <label for="comment_user" class="form-label">用户名</label>
+                                                        <input type="text" id="comment_user" class="form-control">
+                                                        <hr>
+                                                        <button class="btn btn-secondary">提交</button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header d-flex justify-content-md-center" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseOne" aria-expanded="false"
+                                                        aria-controls="collapseOne">
+                                                    调查问卷
+                                                </button>
+                                            </h5>
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                             data-bs-parent="#accordion">
+                                            <div class="card-body">
+                                                <form class="col container" id="research">
+                                                    <div class="col-8">
+                                                        <label for="q1"
+                                                               class="form-label">1.您是否是第一次访问我们的官方网站？</label>
+                                                        <select id="q1" class="form-select" aria-label="选择一个回答">
+                                                            <option selected>选择一个回答</option>
+                                                            <option value="1">是</option>
+                                                            <option value="2">否</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <label for="q2" class="form-label">②您遇到了什么问题？</label>
+                                                        <select id="q2" class="form-select" aria-label="选择一个回答">
+                                                            <option selected>选择一个回答</option>
+                                                            <option value="1">需要为照片除灵</option>
+                                                            <option value="2">房屋是凶宅</option>
+                                                            <option value="3">肩膀很重</option>
+                                                            <option value="4">想要听听某个人的声音</option>
+                                                            <option value="5">房间有幽灵作祟</option>
+                                                            <option value="6">遭遇都市传说</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <label for="q3"
+                                                               class="form-label">3.您对哪个除灵套餐最感兴趣？</label>
+                                                        <select id="q3" class="form-select" aria-label="选择一个回答">
+                                                            <option selected>选择一个回答</option>
+                                                            <option value="1">A套餐</option>
+                                                            <option value="2">B套餐</option>
+                                                            <option value="3">C套餐</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <label for="q4" class="form-label">4.您看见过几个恶灵？</label>
+                                                        <select id="q4" class="form-select" aria-label="选择一个回答">
+                                                            <option selected>选择一个回答</option>
+                                                            <option value="1">0</option>
+                                                            <option value="2">1</option>
+                                                            <option value="3">2</option>
+                                                            <option value="4">3及以上</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <label for="q5"
+                                                               class="form-label">5.您想接受来自哪位员工的服务？</label>
+                                                        <select id="q5" class="form-select" aria-label="选择一个回答">
+                                                            <option selected>选择一个回答</option>
+                                                            <option value="1">灵幻新隆</option>
+                                                            <option value="2">芹泽克也</option>
+                                                            <option value="3" style="background-color: black">影山茂夫</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <label for="q6"
+                                                               class="form-label">6.属于您的“能量场所”是哪里？</label>
+                                                        <input id="q6" type="text" class="form-control">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <label for="q7" class="form-label">7.死的尽头是哪里？</label>
+                                                        <input id="q7" type="text" class="form-control">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <label for="q8" class="form-label">8.我现在非常后悔</label>
+                                                        <input id="q8" type="text" class="form-control">
+                                                    </div>
+                                                    <hr>
+                                                    <div class="col-8">
+                                                        <button type="submit" class="btn btn-primary">提 交</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-primary">Sign in</button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="blog" role="tabpanel" aria-labelledby="blog-tab"
                      tabindex="0">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col" style="display: grid; text-align: left">
+                            <div class="col" style="display: grid; text-align: left; padding: 20px;">
                                 <div class="row"></div>
                                 <div class="row">
                                     <form class="info-form" id="account">
                                         <div class="mb-3">
-                                            <label for="account_name" class="form-label">Account</label>
-                                            <input type="email" class="form-control" id="account_name">
+                                            <label for="account_name" class="form-label">用户名</label>
+                                            <input type="text" class="form-control" id="account_name">
                                         </div>
                                         <div class="mb-3">
-                                            <label for="password" class="form-label">Password</label>
+                                            <label for="password" class="form-label">密码</label>
                                             <input type="password" class="form-control" id="password">
                                         </div>
-                                        <button type="submit" class="btn btn-primary">確認</button>
+                                        <button type="submit" class="btn btn-primary">确认</button>
                                     </form>
                                 </div>
                                 <div id="blogs" class="col">
@@ -190,7 +338,8 @@
                                             这是和龙套见最后一面的机会 <br>
                                             作为他的丈夫还有他的师父，不振作起来可不行啊 <br>
                                             但是在看到他脸的那一刻还是忍不住了 <br>
-                                            我眼前闪过无数的龙套，大笑着的他，哭泣的他，闹别扭的他，害羞的他，帅气的他 <br>
+                                            我眼前闪过无数的龙套，大笑着的他，哭泣的他，闹别扭的他，害羞的他，帅气的他
+                                            <br>
                                             还没书桌高时执拗地踮起脚尖非要凑过来看电脑屏幕的他， <br>
                                             因为我说了想要去海边就偷偷存钱准备结果计划暴露恼羞成怒的他。 <br>
                                             但是眼前是我从未见过的，毫无生气的他 <br>
@@ -225,12 +374,15 @@
                                         <p>
                                             因为我之前打败妃姬子的记录广为流传 <br>
                                             在那之后也多多少少处理过一些和都市传说有关的委托 <br>
-                                            这次委托人带来的都市传说是在约一个月前出现在调味市的神秘网站 <br>
+                                            这次委托人带来的都市传说是在约一个月前出现在调味市的神秘网站
+                                            <br>
                                             传说这是个被诅咒的网站 <br>
                                             只有被它选中的人才能打开，网站通向冥界 <br>
-                                            不仅创建人和创建它的目的是个谜，而且据说最近发生了几起失踪事故均和它有关 <br>
+                                            不仅创建人和创建它的目的是个谜，而且据说最近发生了几起失踪事故均和它有关
+                                            <br>
                                             虽然我在对付都市传说方面小有心得 <br>
-                                            但是网站什么的我可谈不上在行，光是能经营这么个小主页就费尽心思了 <br>
+                                            但是网站什么的我可谈不上在行，光是能经营这么个小主页就费尽心思了
+                                            <br>
                                             倒不如说，如果真的能去冥界的话 <br>
                                             我还真想试试看 <br>
                                             不过委托既然接下来了就好好调查一下吧 <br>
@@ -257,7 +409,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="modal fade" id="false_warning" data-bs-backdrop="static" data-bs-keyboard="false"
+                        <div class="modal fade" id="false_warning" data-bs-backdrop="static"
+                             data-bs-keyboard="false"
                              tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -270,7 +423,8 @@
                                         IDやパスワードが違います。
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                                        <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close
                                         </button>
                                         <button type="button" class="btn btn-primary">Understood</button>
                                     </div>
