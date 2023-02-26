@@ -1,4 +1,7 @@
 $( document ).ready(function() {
+    window.onload = function() {
+      var context = new AudioContext();
+    }
     let count=1;
     let text=[
         "为何你会来到这里，这里不应是你该来的地方",
@@ -16,6 +19,7 @@ $( document ).ready(function() {
         "我究竟是何时诞生的？"
     ];
     $("body").click(function(e) {
+        $("#music").get(0).play();
     debugger
         if (text.length>0) {
             let t = text.shift();
