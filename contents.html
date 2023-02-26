@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="src/mainstyle.css">
     <script type="text/javascript"
             src="https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1-edb203c114.10.2.js"></script>
-<!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+    <!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
             crossorigin="anonymous"></script>
@@ -32,13 +32,21 @@
 <div class="wrapper">
     <div class="main">
         <div style="height: 100vh;width: 75vw;">
-            <div style="height:150px; background:blue">
-                <div style="padding-top: 10px">
-                    <input type="search" id="site-search" name="q">
-                    <button>Search</button>
-                </div>
-                <svg style="fill:white" viewBox="-10 10 370 160">
-                    <text style="fill:white;" class="svgStroke" y="30" x="20">myspace</text>
+            <div style="height:150px; background:black; opacity: 0.6">
+                <svg style="stroke-width: 4px;" viewBox="0 0 370 130">
+                    <defs>
+                        <linearGradient id="rainbow" x1="0" x2="0" y1="15" y2="25" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="blue" offset="0%"/>
+                            <stop stop-color="purple" offset="25%"/>
+                            <stop stop-color="red" offset="50%"/>
+                            <stop stop-color="orange" offset="75%"/>
+                            <stop stop-color="green" offset="100%"/>
+                        </linearGradient>
+                    </defs>
+                    <text style="fill:gold" stroke="url(#rainbow)" class="svgStroke" y="20" x="50%"
+                          text-anchor="middle" dominant-baseline="middle">
+                        灵之类相谈所 官方网站
+                    </text>
                 </svg>
             </div>
             <nav class="navbar" style="background-color: cornflowerblue;">
@@ -168,13 +176,16 @@
                                                 <div class="row">
                                                     <div class="col-7">
                                                         <div class="row">
-                                                            <label for="comment_box" class="form-label">请留下您的宝贵意见</label>
-                                                            <textarea id="comment_box" class="form-control" style="height: 200px;"></textarea>
+                                                            <label for="comment_box"
+                                                                   class="form-label">请留下您的宝贵意见</label>
+                                                            <textarea id="comment_box" class="form-control"
+                                                                      style="height: 200px;" disabled></textarea>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
                                                         <label for="comment_user" class="form-label">用户名</label>
-                                                        <input type="text" id="comment_user" class="form-control">
+                                                        <input type="text" id="comment_user" class="form-control"
+                                                               disabled>
                                                         <hr>
                                                         <button class="btn btn-secondary">提交</button>
                                                     </div>
@@ -189,7 +200,8 @@
                                                 <button class="btn btn-link collapsed" data-bs-toggle="collapse"
                                                         data-bs-target="#collapseOne" aria-expanded="false"
                                                         aria-controls="collapseOne">
-                                                    调查问卷
+                                                    <img src="src/images/questionnaire.gif" class="image" alt=""
+                                                         style="width: 700px;"/>
                                                 </button>
                                             </h5>
                                         </div>
@@ -246,7 +258,8 @@
                                                             <option selected>选择一个回答</option>
                                                             <option value="1">灵幻新隆</option>
                                                             <option value="2">芹泽克也</option>
-                                                            <option value="3" style="background-color: black">影山茂夫</option>
+                                                            <option value="3" style="background-color: black">影山茂夫
+                                                            </option>
                                                         </select>
                                                     </div>
                                                     <div class="col-8">

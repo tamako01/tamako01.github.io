@@ -246,22 +246,38 @@ font-size: 150%
     display: none;
 }
 
-.stars{
+.stars {
   position: absolute;
   top: 0;
-  animation: example 5s infinite;
+  z-index: 999;
+  pointer-events: none;
 }
 
-@keyframes example {
-  0%   {width: 100px;}
-  100% {top: 100vh; width: 100px;  transform: scaleX(-1);}
+#nameband:hover ~ .stars {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  pointer-events: none;
+  animation: fly 1s linear infinite;
+}
+
+@keyframes fly {
+    0%{
+        transform: translate(0,-10vh);
+    }
+    50%{
+        transform: translate(0,50vh) scaleX(-1);
+    }
+    100%{
+        transform: translate(0,110vh);
+    }
 }
 
 #dialog p, #reply {
  text-shadow: 2px 2px 3px  rgba(0,0,0, 0.8);
  font-family: New Tegomin;
  color:gray;
- font-size: 150%;
+ font-size: 120%;
 }
 
 #chance, #end {
