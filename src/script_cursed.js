@@ -34,7 +34,7 @@ $( document ).ready(function() {
         if (count>=5) {
             window.location.href="main.html";
         }
-        if ($("#answer").val()==="0225") {
+        if ($("#answer").val()==="02 25") {
             $("#dialog").hide();
             $("#reply").hide();
             $("#overlay").css("background-color", "black");
