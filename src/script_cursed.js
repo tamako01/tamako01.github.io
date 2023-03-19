@@ -19,8 +19,9 @@ $( document ).ready(function() {
         "我究竟是何时诞生的？"
     ];
     $("body").click(function(e) {
-        $("#music").get(0).play();
-    debugger
+        if ( $("#end").css("display")==="none") {
+            $("#music").get(0).play();
+        }
         if (text.length>0) {
             let t = text.shift();
             $("#dialog").append("<p>"+t+"</p>");
@@ -35,6 +36,7 @@ $( document ).ready(function() {
             window.location.href="main.html";
         }
         if ($("#answer").val()==="02 25") {
+            $("#music").get(0).pause();
             $("#dialog").hide();
             $("#reply").hide();
             $("#overlay").css("background-color", "black");
