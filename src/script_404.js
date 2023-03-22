@@ -6,6 +6,9 @@ function jump(){
     sessionStorage.removeItem("reloading");
 };
 function yeah(e) {
+    if ($("#image404").get().length===0) {
+        $("#404_overlay").append('<img src="src/images/404.png" class="image wh-100" id="image404" alt=""/>');
+    }
     $("#image404").show();
     if ($("#image404").css("display")==="block") {
         window.setTimeout( jump, 300 ); // 5 seconds
@@ -17,14 +20,12 @@ $( document ).ready(function() {
     var reloading = sessionStorage.getItem("reloading");
     if (reloading) {
         sessionStorage.removeItem("reloading");
-        showup();
         yeah();
     }
     sessionStorage.setItem("reloading", "true");
-    window.setTimeout( showup, 4000 ); // 4 seconds
+    window.setTimeout( showup, 3000 ); // 4 seconds
 
     $("body").click(yeah);
 
-
-
+    window.setTimeout( yeah, 4000 ); // 4 seconds
 });
