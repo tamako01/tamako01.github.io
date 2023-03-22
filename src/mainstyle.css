@@ -105,18 +105,22 @@ body:before {
     -ms-transform: scale(1);
     transform: scale(1);
     background-attachment: scroll;
-    background-image: url('images/bg.jpg');
     background-position: center;
     background-repeat: repeat;
     background-size: contain;
     background-color: #FFFFFF;
 }
+
 #topic_page:before {
     background-image: url('images/bg.png')
 }
 
 #cursed_page:before {
     background-image: url('images/black.jpg')
+}
+
+#content_page:before, #main_page:before {
+    background-image: url('images/bg.jpg')
 }
 
 .main {
@@ -310,4 +314,11 @@ font-size: 150%
 .comment_name {
 font-family:Electrolize;
 color:brown;
+}
+
+#image404 {
+    position:absolute;
+    display:none;
+    width: 100%;
+    z-index:99;
 }

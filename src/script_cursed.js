@@ -33,7 +33,7 @@ $( document ).ready(function() {
         let answer = $("#answer").val();
         e.preventDefault();
         if (count>=5) {
-            window.location.href="main.html";
+            window.location.href="404.html";
         }
         if ($("#answer").val()==="02 25") {
             $("#music").get(0).pause();
