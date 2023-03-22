@@ -11,7 +11,7 @@ function yeah(e) {
     }
     $("#image404").show();
     if ($("#image404").css("display")==="block") {
-        window.setTimeout( jump, 300 ); // 5 seconds
+        window.setTimeout( jump, 1000 ); // 1 seconds
     }
 }
 
@@ -23,7 +23,7 @@ $( document ).ready(function() {
         yeah();
     }
     sessionStorage.setItem("reloading", "true");
-    window.setTimeout( showup, 3000 ); // 4 seconds
+    window.setTimeout( showup, 1000 ); // 1 seconds
 
     $("body").click(yeah);
 

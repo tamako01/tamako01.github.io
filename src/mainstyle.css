@@ -119,7 +119,7 @@ body:before {
     background-image: url('images/black.jpg')
 }
 
-#content_page:before, #main_page:before {
+#content_page:before, #main_page:before, #page404:before {
     background-image: url('images/bg.jpg')
 }
 
