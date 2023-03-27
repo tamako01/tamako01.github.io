@@ -47,6 +47,10 @@ $( document ).ready(function() {
             $("#reply").text("这几个字让我很不舒服，也和问题无关吧，已经够了");
         } else if (answer.includes("新隆") ||answer.includes("灵幻") ||answer.includes("师父") ||answer.includes("师匠")) {
             $("#reply").text("哦，那个人啊，似乎他与我的存在有着某种联系...想不起来");
+        } else if (answer.includes("???")) {
+            $("#reply").text("无聊的游戏适可而止，你是为了这个才打开这个网页的吗，我的耐心是有限的");
+        } else if (answer.includes("都市传说")) {
+            $("#reply").text("世间的人类们似乎是这样称呼我的，但是我就是我");
         } else {
             let op = 0.2*count;
             $("#overlay").css("background-color", "rgba(255,0,0,"+op+")");
