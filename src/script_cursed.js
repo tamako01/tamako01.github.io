@@ -39,7 +39,7 @@ $( document ).ready(function() {
         if (count>=5) {
             window.location.href="404.html";
         }
-        if ($("#answer").val()==="02 25") {
+        if ($("#answer").val()==="0225") {
             $("#music").get(0).pause();
             $("#dialog").hide();
             $("#reply").hide();
